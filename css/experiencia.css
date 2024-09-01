@@ -82,7 +82,7 @@
     grid-template-columns: 1fr;
     gap: 20px;
     position: relative;
-    top: 30px;
+    top: -30px;
   }
 
   .experiencia-texto {
@@ -93,4 +93,17 @@
     font-size: 2.3rem;
     max-width: initial;
   }
+}
+
+@media (width <= 900px) {
+    .experiencia {
+        top: 20px;
+    }
+}
+
+@media (width <= 600px) {
+    .experiencia {
+        padding: 0 20px;
+        top: 15px;
+    }
 }

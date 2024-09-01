@@ -24,7 +24,7 @@ img {
 
 .container {
   max-width: 1200px;
-  padding: 50px 20px 0 20px;
+  padding: 70px 20px 0 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -50,5 +50,11 @@ img {
     text-transform: capitalize;
     /* word-break:  normal; */
     max-width: initial;
+  }
+}
+
+@media (width <= 600) {
+  .container {
+    padding: 0px;
   }
 }
