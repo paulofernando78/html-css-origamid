@@ -5,7 +5,6 @@
   grid-template-columns: 1fr;
   gap: 20px;
   position: relative;
-  border-radius: 5px;
 }
 
 .formacao .subtitulo {
@@ -120,9 +119,9 @@
 }
 
 .listras-verdes-bottom {
-  position: relative;
+  position: absolute;
   width: 60px;
-  top: -27px;
+  top: 1945px;
   left: 20px;
   z-index: 1;
 }
@@ -146,7 +145,14 @@
     max-width: initial;
     color: white;
   }
+
   /* .formacao-extra h3::before {
     position: initial;
   } */
+}
+
+@media (width <= 600px) {
+  .faculdade-lista {
+    flex-direction: column;
+  }
 }
