@@ -118,10 +118,15 @@
   gap: 8px;
 }
 
+/* .formacao-container {
+  position: relative;
+} */
+
 .listras-verdes-bottom {
-  position: absolute;
+  position: relative;
   width: 60px;
-  top: 1945px;
+  /* top: 1945px; */
+  top: -30px;
   left: 20px;
   z-index: 1;
 }
