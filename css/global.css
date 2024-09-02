@@ -1,7 +1,14 @@
 body {
-  margin: 0px;
+  margin: 0 auto;
   font-family: "Fira Sans", Arial, sans-serif;
   color: #141414;
+  max-width: 1200px;
+}
+
+.line-break {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 h1,
@@ -24,12 +31,12 @@ img {
 
 .container {
   max-width: 1200px;
-  padding: 20px;
+  padding: 50px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 10px;
-  align-items: center;
+  gap: 20px;
+  /* align-items: center; */
 }
 
 .subtitulo {

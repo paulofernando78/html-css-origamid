@@ -1,4 +1,3 @@
-
 .formacao {
   background: #141414;
   color: #ffffff;
@@ -6,17 +5,18 @@
   grid-template-columns: 1fr;
   gap: 20px;
   position: relative;
+  border-radius: 5px;
 }
 
 .formacao .subtitulo {
   color: #000000;
+  max-width: 5ch;
 }
 
 .formacao-texto {
   font-size: 1.5rem;
   line-height: 1.33;
-  margin-bottom: 30px;
-  max-width: 40ch;
+  /* max-width: 40ch; */
   color: #525252;
 }
 
@@ -28,7 +28,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin-bottom: 60px;
 }
 
 .faculdade {
@@ -71,10 +70,6 @@
   color: #a3a3a3;
 }
 
-.cursos {
-  margin-bottom: 60px;
-}
-
 .formacao-extra h3 {
   font-size: 0.875rem;
   line-height: 1.4;
@@ -103,6 +98,11 @@
   background: url("../img/idiomas.svg");
 }
 
+.cursos, .idiomas {
+  position: relative;
+  left: 36px;
+}
+
 .formacao-extra span {
   color: #8f8f8f;
 }
@@ -117,4 +117,36 @@
   display: grid;
   grid-template-columns: 132px auto;
   gap: 8px;
+}
+
+.listras-verdes-bottom {
+  position: relative;
+  width: 60px;
+  top: -27px;
+  left: 20px;
+  z-index: 1;
+}
+
+/* .formacao-container::after {
+  content: "";
+  background-image: url("../img/detalhe.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 130px;
+  height: 120px;
+} */
+
+@media (width <= 1000px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+  }
+
+  .formacao .subtitulo {
+    font-size: 2.3rem;
+    max-width: initial;
+    color: white;
+  }
+  /* .formacao-extra h3::before {
+    position: initial;
+  } */
 }
